@@ -1,0 +1,111 @@
+.qcm-background-prof {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f6f9;
+  background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
+}
+
+.qcm-card-prof {
+  width: 800px;
+  height: 500px;
+  border-radius: 15px;
+  padding: 0;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+}
+
+.slide-in {
+  transform: translateX(0);
+  opacity: 1;
+  transition: all 0.4s ease;
+}
+
+.slide-out {
+  transform: translateX(50px);
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.qcm-header-prof {
+  background-color: #0079C1;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border-radius: 15px 15px 0 0;
+  text-align: center;
+  padding: 1rem;
+}
+
+.qcm-body-prof {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem ;
+  justify-content: space-between;
+}
+
+.qcm-question-container {
+  overflow-y: auto;
+  flex: 1;
+  margin-left: 50px;
+}
+
+.qcm-progress-prof {
+  height: 12px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color: #dbeaf6;
+}
+
+.qcm-question-prof {
+  color: #0079C1;
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+}
+
+.qcm-option-prof {
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.qcm-buttons-prof {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.qcm-btn-back-prof {
+  color: #0079C1;
+  border: 2px solid #0079C1;
+  border-radius: 8px;
+  font-weight: 600;
+  background-color: white;
+  transition: all 0.2s;
+}
+.qcm-btn-back-prof:hover {
+  background-color: #0079C1;
+  color: white;
+  box-shadow: 0 0 10px rgba(0,121,193,0.5);
+}
+
+.qcm-btn-next-prof {
+  background-color: #0079C1;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+.qcm-btn-next-prof:hover {
+  box-shadow: 0 0 15px rgba(0,121,193,0.5);
+  opacity: 0.9;
+}
